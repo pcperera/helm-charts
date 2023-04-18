@@ -11,6 +11,8 @@ argocdReleaseOverride: ""
 # -- also checkout here possible ENV variables to configure operator behaviour https://docs.victoriametrics.com/operator/vars.html
 victoria-metrics-operator:
   enabled: true
+  rbac:
+    pspEnabled: false
   # -- Tells helm to remove CRD after chart remove
   cleanupCRD: true
   cleanupImage:
